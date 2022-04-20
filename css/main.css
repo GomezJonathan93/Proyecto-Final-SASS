@@ -1,0 +1,851 @@
+@charset "UTF-8";
+* {
+  color: #ffff; }
+
+body {
+  background-color: black; }
+
+.flex-div {
+  display: flex;
+  align-content: center;
+  justify-content: space-between; }
+  .flex-div img {
+    height: 80px;
+    width: 80px; }
+
+.contenedor-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .contenedor-nav li {
+    list-style: none; }
+    .contenedor-nav li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-family: "Fredoka", sans-serif;
+      font-size: 1rem;
+      margin: 0.3rem; }
+      .contenedor-nav li a:hover {
+        color: #8F00FF; }
+
+.index-h1 {
+  text-align: center;
+  color: #8F00FF;
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem; }
+
+.contenedor-h2 {
+  border: 0.12rem solid #8F00FF;
+  padding: 0.5rem;
+  margin: 0.6rem; }
+  .contenedor-h2 h2 {
+    font-size: 1rem;
+    font-family: "Fredoka", sans-serif;
+    text-align: center; }
+  .contenedor-h2 .segundo-h2 {
+    color: #8F00FF; }
+
+section {
+  display: grid;
+  grid-template-areas: "clientes coaches" "boosters venta"; }
+
+.clientes {
+  grid-area: clientes;
+  font-size: 1rem;
+  font-family: "Fredoka", sans-serif;
+  text-align: center; }
+
+.coaches {
+  grid-area: coaches;
+  font-size: 1rem;
+  font-family: "Fredoka", sans-serif;
+  text-align: center; }
+
+.boosters {
+  grid-area: boosters;
+  font-size: 1rem;
+  font-family: "Fredoka", sans-serif;
+  text-align: center; }
+
+.venta {
+  grid-area: venta;
+  font-size: 1rem;
+  font-family: "Fredoka", sans-serif;
+  text-align: center; }
+
+.parrafo2 {
+  color: #8F00FF;
+  font-size: 3rem; }
+
+.img-estadisticas {
+  height: 6.25rem;
+  width: 6.25rem; }
+
+.ventajas-section {
+  display: inline-block;
+  background-color: #000;
+  padding: 0.5rem;
+  margin: 0.6rem;
+  border: 0.12rem solid #8F00FF; }
+
+.ventajas-titulo {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #8F00FF;
+  font-family: "Lobster", cursive; }
+
+.ventajas-p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Fredoka", sans-serif;
+  color: #ffffff;
+  padding: 10px 10px; }
+
+.ventajas-span {
+  color: #8F00FF;
+  font-size: 1.2rem; }
+
+.ventajas-contacto {
+  color: #8F00FF;
+  font-size: 1.2rem;
+  text-decoration: none; }
+
+.titulo-carrusel {
+  text-align: center;
+  font-size: 1.9rem;
+  color: #8F00FF;
+  font-family: "Lobster", cursive;
+  padding-bottom: 1rem; }
+
+.texto-carousel {
+  margin: 3rem; }
+
+.carousel-item p {
+  font-size: 1.2rem;
+  font-family: "Fredoka", sans-serif;
+  text-align: center; }
+
+.carousel-item a {
+  text-decoration: none;
+  color: #8F00FF;
+  font-size: 1rem; }
+
+.titulo-lore {
+  text-align: center;
+  font-size: 2rem;
+  color: #8F00FF;
+  font-family: "Lobster", cursive; }
+
+.div-lore {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Fredoka", sans-serif;
+  color: #ffffff;
+  padding: 10px 10px; }
+
+.span-lore {
+  color: #8F00FF;
+  font-size: 1.2rem; }
+
+.video {
+  aspect-ratio: 16 / 9;
+  width: 100%; }
+
+.vuelve-arriba {
+  display: flex;
+  justify-content: center; }
+  .vuelve-arriba a {
+    text-decoration: none;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1rem;
+    color: #8F00FF; }
+
+.redes-sociales {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-evenly; }
+  .redes-sociales li {
+    list-style: none; }
+    .redes-sociales li a {
+      text-decoration: none;
+      font-family: "Lobster", cursive;
+      font-size: 0.8rem;
+      color: #8F00FF; }
+
+.parrafo-footer {
+  text-align: center;
+  font-size: 0.5rem;
+  font-family: "Fredoka", sans-serif; }
+  .parrafo-footer a {
+    text-decoration: none; }
+
+.parrafo-footer2 {
+  font-size: 0.8rem;
+  font-family: "Lobster", cursive;
+  text-align: center; }
+
+@media only screen and (min-width: 600px) {
+  .imgEstadisticas {
+    height: 12rem;
+    width: 12rem; }
+  .referenciasTrabajo h3 {
+    font-size: 2.1rem; } }
+
+@media only screen and (min-width: 1024px) {
+  header img {
+    height: 10rem;
+    width: 10rem; }
+  .contenedor-nav a {
+    font-size: 1.5rem;
+    margin: 1rem; }
+  .index-h1 {
+    font-size: 5rem; }
+  .contenedor-h2 h2 {
+    font-size: 1.5rem; }
+  .estadisticas {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem; }
+  .clientes {
+    font-size: 2rem; }
+  .coaches {
+    font-size: 2rem; }
+  .boosters {
+    font-size: 2rem; }
+  .venta {
+    font-size: 2rem; }
+  .parrafo2 {
+    font-size: 4rem; }
+  .img-estadisticas {
+    height: 15rem;
+    width: 15rem; }
+  .ventajas-section {
+    margin: 1rem; }
+  .ventajas-titulo {
+    font-size: 3.5rem; }
+  .ventajas-p {
+    font-size: 1.5rem; }
+  .ventajas-span {
+    font-size: 1.8rem; }
+  .ventajas-contacto {
+    font-size: 1.8rem; }
+  /*query de carrusel*/
+  .titulo-carrusel {
+    font-size: 3.5rem; }
+  .texto-carousel {
+    margin: 10rem; }
+  /*query lore*/
+  .titulo-lore {
+    font-size: 3.5rem; }
+  .div-lore {
+    font-size: 1.5rem;
+    padding: 10px 10px; }
+  .span-lore {
+    font-size: 1.8rem; }
+  .video {
+    margin-top: 2rem;
+    width: 560px;
+    height: 315px; }
+  .vuelve-arriba a {
+    font-size: 1rem; }
+  .redes-sociales li {
+    font-size: 1.5rem; }
+    .redes-sociales li a {
+      font-size: 1.5rem; }
+  .parrafo-footer {
+    font-size: 0.8rem; }
+  .parrafo-footer2 {
+    font-size: 1.2rem; } }
+
+.h1-coaching h1 {
+  text-align: center;
+  color: #8F00FF;
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem; }
+
+.h2-coaching h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: "Fredoka", sans-serif;
+  text-align: center; }
+
+.div-h3 {
+  margin-top: 2rem;
+  background-color: #ededf2;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  .div-h3 h3 {
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Fredoka", sans-serif; }
+  .div-h3 h4 {
+    padding-top: 1rem;
+    color: #8F00FF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "Fredoka", sans-serif; }
+
+.coaching-p {
+  padding: 1rem;
+  color: #000000;
+  text-align: justify;
+  font-size: 1.5rem;
+  font-family: "Fredoka", sans-serif; }
+
+.contenedor-coach {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border: 0.12rem solid #8F00FF; }
+
+.buggax-coach {
+  display: none;
+  height: 200px;
+  width: 250px; }
+
+.josedeodo-coach, .corejj-coach {
+  display: none; }
+
+.showmaker-coach {
+  display: none;
+  height: 200px;
+  width: 250px; }
+
+.boton-contrato {
+  text-align: center; }
+  .boton-contrato a {
+    font-family: "Fredoka", sans-serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #8F00FF; }
+
+.coach-span {
+  color: #8F00FF;
+  font-size: 2rem; }
+
+.buggaxP, .josedeodoP, .corejjP, .showmakerP {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-top: 1.6rem;
+  margin: 1.9rem; }
+
+.contenedor-reclutamiento-feedback {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #000;
+  padding: 1rem; }
+  .contenedor-reclutamiento-feedback h5 {
+    text-align: center;
+    color: #8F00FF;
+    font-family: "Lobster", cursive;
+    font-size: 3rem; }
+
+.reclutamiento-p {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffffff; }
+  .reclutamiento-p span {
+    color: #8F00FF;
+    font-size: 1.5rem; }
+  .reclutamiento-p a {
+    text-decoration: none;
+    color: #8F00FF;
+    font-size: 1,5rem; }
+
+.feedback-coaching {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 2rem; }
+  .feedback-coaching h5 {
+    font-size: 3rem;
+    color: #8F00FF;
+    font-family: "Lobster", cursive;
+    padding-bottom: 1rem; }
+  .feedback-coaching p {
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family: "Fredoka", sans-serif; }
+  .feedback-coaching a {
+    text-decoration: none;
+    color: #8F00FF;
+    font-size: 1.5rem; }
+
+@media only screen and (min-width: 1024px) {
+  header img {
+    height: 10rem;
+    width: 10rem; }
+  .h1-coaching h1 {
+    font-size: 5rem; }
+  .h2-coaching h2 {
+    font-size: 2.5rem; }
+  .div-h3 h3 {
+    font-size: 3rem; }
+  .div-h3 h4 {
+    font-size: 2.2rem; }
+  .coaching-p {
+    font-size: 1.8rem; }
+  .contenedor-coach {
+    align-items: center;
+    margin-left: 10rem;
+    margin-right: 10rem; }
+  .buggax-p, .josedeodo-p, .corejj-p, .showmaker-p {
+    font-size: 2rem; }
+  .contenedor-reclutamiento-feedback {
+    display: grid;
+    grid-template-areas: "reclutamiento-div feedback-coaching feedback-coaching" "reclutamiento-div feedback-coaching feedback-coaching" "reclutamiento-div feedback-coaching feedback-coaching" "reclutamiento-div feedback-coaching feedback-coaching";
+    align-items: center; }
+  .reclutamiento-div {
+    grid-area: reclutamiento-div; }
+  .feedback-coaching {
+    grid-area: feedback-coaching; } }
+
+.titulo-boosting {
+  text-align: center;
+  color: #8F00FF;
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem;
+  margin-top: 1rem; }
+
+.subtitulo-boosting {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: "Fredoka", sans-serif;
+  text-align: center; }
+
+.disclaimer-boosting {
+  margin: 1rem;
+  border: 0.12rem solid #8F00FF;
+  font-family: "Fredoka", sans-serif;
+  text-align: center; }
+  .disclaimer-boosting h3 {
+    color: #8F00FF;
+    font-size: 1.2rem; }
+  .disclaimer-boosting p {
+    font-size: 1.2rem;
+    margin: 5px; }
+  .disclaimer-boosting a {
+    text-decoration: none;
+    color: #8F00FF;
+    font-size: 1.2rem; }
+
+.contenedor-booster {
+  display: flex;
+  flex-direction: column;
+  border: 0.12rem solid #8F00FF;
+  margin: 1rem;
+  text-align: center; }
+
+.champion-boost {
+  display: none;
+  height: 200px;
+  width: 250px; }
+
+.booster-p {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  margin: 2rem; }
+  .booster-p a {
+    font-family: "Fredoka", sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #8F00FF;
+    padding-right: 5px; }
+
+.garantia-div h4 {
+  color: #8F00FF;
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  text-align: center; }
+
+.garantia-div p {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.2rem;
+  margin: 0.6rem;
+  text-align: center; }
+
+.garantia-div span {
+  color: #8F00FF;
+  font-size: 1.3rem; }
+
+.garantia-div a {
+  text-decoration: none;
+  color: #8F00FF; }
+
+@media only screen and (min-width: 1024px) {
+  .titulo-boosting {
+    font-size: 4rem; }
+  .subtitulo-boosting {
+    font-size: 2.18rem; }
+  .disclaimer-boosting {
+    margin-left: 4rem;
+    margin-right: 4rem; }
+    .disclaimer-boosting h3 {
+      font-size: 1.87rem; }
+    .disclaimer-boosting p {
+      font-size: 1.5rem; }
+    .disclaimer-boosting a {
+      font-size: 1.8rem; }
+  .contenedor-booster {
+    align-items: center;
+    margin-left: 10rem;
+    margin-right: 10rem; }
+  .garantia-div h4 {
+    font-size: 3rem; }
+  .garantia-div p {
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem; }
+  .garantia-div span {
+    font-size: 1.8rem; } }
+
+.cuentas-titulo {
+  text-align: center;
+  color: #8F00FF;
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem; }
+
+.cuentas-subtitulo {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  padding: 10px; }
+
+.cuentas-galeria {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column; }
+
+.titulo-galeria {
+  font-size: 2.5rem;
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  padding: 1rem;
+  color: #8F00FF; }
+
+.imagenes-galeria {
+  display: grid;
+  justify-items: center;
+  grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img9" "parrafo-gal-grid parrafo-gal-grid" "contac-gal-grid contac-gal-grid"; }
+
+.img1 {
+  grid-area: img1;
+  height: 300px;
+  width: 200px; }
+
+.img2 {
+  grid-area: img2;
+  height: 300px;
+  width: 200px; }
+
+.img3 {
+  grid-area: img3;
+  height: 300px;
+  width: 200px; }
+
+.img4 {
+  grid-area: img4;
+  height: 300px;
+  width: 200px; }
+
+.img5 {
+  grid-area: img5;
+  height: 300px;
+  width: 200px; }
+
+.img6 {
+  grid-area: img6;
+  height: 300px;
+  width: 200px; }
+
+.img7 {
+  grid-area: img7;
+  height: 300px;
+  width: 200px; }
+
+.img8 {
+  grid-area: img8;
+  height: 300px;
+  width: 200px; }
+
+.img9 {
+  grid-area: img9;
+  height: 300px;
+  width: 200px; }
+
+.parrafo-gal-grid {
+  grid-area: parrafo-gal-grid;
+  font-size: 1.2rem;
+  font-family: "Fredoka", sans-serif;
+  text-align: center; }
+
+.contac-gal-grid {
+  grid-area: contac-gal-grid;
+  text-decoration: none;
+  color: #8F00FF;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.5rem;
+  text-align: center; }
+
+.imagenes-galeria img {
+  padding-top: 0.5rem; }
+
+.imagenes-galeria-un {
+  display: grid;
+  grid-template-areas: "img-un1 img-un2" "img-un3 img-un3";
+  justify-items: center; }
+
+.img-un1 {
+  grid-area: img-un1; }
+
+.img-un2 {
+  grid-area: img-un2; }
+
+.img-un3 {
+  grid-area: img-un3; }
+
+.imagenes-galeria-un img {
+  height: 300px;
+  width: 200px;
+  padding-top: 0.5rem; }
+
+.parrafo-galeria {
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  padding: 1rem; }
+  .parrafo-galeria p {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column; }
+  .parrafo-galeria a {
+    text-decoration: none;
+    color: #8F00FF;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.5rem;
+    text-align: center; }
+
+.metodos-pago {
+  border: 0.12rem solid #8F00FF;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column; }
+  .metodos-pago h3 {
+    text-align: center;
+    color: #8F00FF;
+    font-family: "Lobster", cursive;
+    font-size: 2.5rem; }
+
+.metodo-pago {
+  text-align: left;
+  color: #8F00FF;
+  font-family: "Fredoka", sans-serif;
+  font-size: 2rem; }
+
+.parrafo-pago {
+  font-size: 1.2rem;
+  font-family: "Fredoka", sans-serif;
+  color: #ffffff; }
+  .parrafo-pago a {
+    text-decoration: none;
+    color: #8F00FF; }
+
+.otros-servicios {
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem;
+  color: #8F00FF;
+  text-align: center; }
+
+.contenedor-servicios {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem; }
+  .contenedor-servicios p {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.2rem;
+    text-align: center; }
+  .contenedor-servicios span {
+    font-family: "Fredoka", sans-serif;
+    color: #8F00FF; }
+  .contenedor-servicios a {
+    text-decoration: none;
+    color: #8F00FF; }
+
+@media only screen and (min-width: 1024px) {
+  .cuentas-titulo {
+    font-size: 4rem; }
+  .cuentas-subtitulo {
+    font-size: 2rem; }
+  .titulo-galeria {
+    font-size: 3rem; }
+  .imagenes-galeria {
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9" "parrafo-gal-grid parrafo-gal-grid parrafo-gal-grid" "contac-gal-grid contac-gal-grid contac-gal-grid"; }
+  .imagenes-galeria img {
+    height: 450px;
+    width: 300px; }
+  .parrafo-gal-grid {
+    font-size: 1.5rem; }
+  .contac-gal-grid {
+    font-size: 2rem; }
+  .imagenes-galeria-un {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+  .parrafo-galeria p {
+    font-size: 1.5rem; }
+  .parrafo-galeria a {
+    font-size: 2rem; }
+  .metodos-pago {
+    border: 0.12rem solid #8F00FF;
+    margin: 1rem; }
+    .metodos-pago h3 {
+      font-size: 3rem; }
+  .parrafo-pago {
+    font-size: 1.8rem;
+    color: #ffffff; } }
+
+.otros-servicios {
+  font-size: 3rem; }
+
+.contenedor-servicios {
+  display: flex;
+  flex-direction: row; }
+  .contenedor-servicios p {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.8rem;
+    text-align: center; }
+  .contenedor-servicios span {
+    font-family: "Fredoka", sans-serif;
+    color: #8F00FF; }
+  .contenedor-servicios a {
+    text-decoration: none;
+    color: #8F00FF; }
+
+/*posiblemente sea re diseñada desde cero*/
+h1 {
+  text-align: center;
+  color: #8F00FF;
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
+  margin-bottom: 2rem; }
+
+.contenedor-formulario-focials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.formulario-contacto {
+  flex: 70%; }
+  .formulario-contacto legend {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Lobster", cursive;
+    font-size: 2rem; }
+  .formulario-contacto label {
+    font-size: 1.2rem;
+    font-family: "Fredoka", sans-serif; }
+  .formulario-contacto input {
+    font-size: 1rem;
+    font-family: "Fredoka", sans-serif;
+    color: #8F00FF; }
+  .formulario-contacto option {
+    color: #8F00FF; }
+  .formulario-contacto select {
+    color: #8F00FF; }
+
+.socials {
+  flex: 30%; }
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  .socials a {
+    text-align: center;
+    color: #8F00FF;
+    font-family: "Lobster", cursive;
+    font-size: 1.5rem;
+    text-decoration: none; }
+
+.twitter {
+  padding-top: 50px; }
+
+.faq-general {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column; }
+
+.titulo-faq {
+  text-align: center;
+  color: #8F00FF;
+  font-family: "Fredoka", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem; }
+
+.parrafo-faq {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  .parrafo-faq p {
+    color: #ffffff;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 60px; }
+
+.titulo-parrafo-faq {
+  color: #8F00FF;
+  font-family: "Fredoka", sans-serif;
+  font-size: 2.5rem; }
+
+.logos-disclaimer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px; }
+
+.logos-contacto {
+  flex: 50%; }
+
+.disclaimer-contacto {
+  flex: 50%; }
+
+/*media queries. 600px por ahora sin cambios*/
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem; }
+  .formulario-contacto legend {
+    font-size: 50px; }
+  .formulario-contacto label {
+    font-size: 30px; }
+  .formulario-contacto input {
+    font-size: 20px;
+    margin-left: 20px; }
+  .socials a {
+    font-size: 30px; }
+  .faq-general {
+    background-color: #ededf2;
+    margin-top: 60px; }
+  .titulo-faq {
+    color: #000000;
+    font-size: 60px;
+    margin-bottom: 50px; }
+  .titulo-parrafo-faq {
+    color: #000000;
+    font-size: 40px; }
+  .parrafo-faq p {
+    color: #000000; } }

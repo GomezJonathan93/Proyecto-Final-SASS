@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   color: #ffff; }
 
@@ -11,18 +10,20 @@ body {
   justify-content: space-between; }
   .flex-div img {
     height: 80px;
-    width: 80px; }
+    width: 80px;
+    margin-left: 1rem; }
 
 .contenedor-nav {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-right: 1rem; }
   .contenedor-nav li {
     list-style: none; }
     .contenedor-nav li a {
       text-decoration: none;
       color: #ffffff;
-      font-family: "Fredoka", sans-serif;
+      font-family: "Lobster", cursive;
       font-size: 1rem;
       margin: 0.3rem; }
       .contenedor-nav li a:hover {
@@ -37,7 +38,7 @@ body {
 .contenedor-h2 {
   border: 0.12rem solid #8F00FF;
   padding: 0.5rem;
-  margin: 0.6rem; }
+  margin: 2rem; }
   .contenedor-h2 h2 {
     font-size: 1rem;
     font-family: "Fredoka", sans-serif;
@@ -85,7 +86,7 @@ section {
   display: inline-block;
   background-color: #000;
   padding: 0.5rem;
-  margin: 0.6rem;
+  margin: 2rem;
   border: 0.12rem solid #8F00FF; }
 
 .ventajas-titulo {
@@ -115,7 +116,9 @@ section {
   font-size: 1.9rem;
   color: #8F00FF;
   font-family: "Lobster", cursive;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem; }
 
 .texto-carousel {
   margin: 3rem; }
@@ -134,14 +137,18 @@ section {
   text-align: center;
   font-size: 2rem;
   color: #8F00FF;
-  font-family: "Lobster", cursive; }
+  font-family: "Lobster", cursive;
+  margin-left: 1rem;
+  margin-right: 1rem; }
 
 .div-lore {
   text-align: center;
   font-size: 1rem;
   font-family: "Fredoka", sans-serif;
   color: #ffffff;
-  padding: 10px 10px; }
+  padding: 10px 10px;
+  margin-left: 1rem;
+  margin-right: 1rem; }
 
 .span-lore {
   color: #8F00FF;
@@ -151,6 +158,7 @@ section {
   aspect-ratio: 16 / 9;
   width: 100%; }
 
+/*footer*/
 .vuelve-arriba {
   display: flex;
   justify-content: center; }
@@ -257,6 +265,7 @@ section {
   .parrafo-footer2 {
     font-size: 1.2rem; } }
 
+/*coaching.html*/
 .h1-coaching h1 {
   text-align: center;
   color: #8F00FF;
@@ -264,18 +273,16 @@ section {
   font-size: 2.5rem; }
 
 .h2-coaching h2 {
-  color: #ffffff;
   font-size: 1.5rem;
   font-family: "Fredoka", sans-serif;
   text-align: center; }
 
 .div-h3 {
   margin-top: 2rem;
-  background-color: #ededf2;
   margin-left: 1rem;
   margin-right: 1rem; }
   .div-h3 h3 {
-    color: #000;
+    color: #ffffff;
     text-align: center;
     font-size: 2rem;
     font-family: "Fredoka", sans-serif; }
@@ -288,7 +295,7 @@ section {
 
 .coaching-p {
   padding: 1rem;
-  color: #000000;
+  color: #ffffff;
   text-align: justify;
   font-size: 1.5rem;
   font-family: "Fredoka", sans-serif; }
@@ -296,21 +303,15 @@ section {
 .contenedor-coach {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 2rem;
   border: 0.12rem solid #8F00FF; }
-
-.buggax-coach {
-  display: none;
-  height: 200px;
-  width: 250px; }
-
-.josedeodo-coach, .corejj-coach {
-  display: none; }
-
-.showmaker-coach {
-  display: none;
-  height: 200px;
-  width: 250px; }
+  .contenedor-coach span {
+    text-align: center;
+    font-family: "Lobster", cursive; }
+  .contenedor-coach p {
+    text-align: center;
+    padding: 1rem;
+    font-family: "Fredoka", sans-serif; }
 
 .boton-contrato {
   text-align: center; }
@@ -323,14 +324,6 @@ section {
 .coach-span {
   color: #8F00FF;
   font-size: 2rem; }
-
-.buggaxP, .josedeodoP, .corejjP, .showmakerP {
-  font-family: "Fredoka", sans-serif;
-  font-size: 1.6rem;
-  text-align: center;
-  flex-wrap: wrap;
-  padding-top: 1.6rem;
-  margin: 1.9rem; }
 
 .contenedor-reclutamiento-feedback {
   display: flex;
@@ -420,7 +413,7 @@ section {
   text-align: center; }
 
 .disclaimer-boosting {
-  margin: 1rem;
+  margin: 2rem;
   border: 0.12rem solid #8F00FF;
   font-family: "Fredoka", sans-serif;
   text-align: center; }
@@ -439,13 +432,14 @@ section {
   display: flex;
   flex-direction: column;
   border: 0.12rem solid #8F00FF;
-  margin: 1rem;
+  margin: 2rem;
   text-align: center; }
-
-.champion-boost {
-  display: none;
-  height: 200px;
-  width: 250px; }
+  .contenedor-booster a {
+    font-family: "Fredoka", sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #8F00FF;
+    padding-right: 5px; }
 
 .booster-p {
   font-family: "Fredoka", sans-serif;
@@ -453,12 +447,6 @@ section {
   text-align: center;
   padding-top: 1.5rem;
   margin: 2rem; }
-  .booster-p a {
-    font-family: "Fredoka", sans-serif;
-    font-size: 2rem;
-    text-decoration: none;
-    color: #8F00FF;
-    padding-right: 5px; }
 
 .garantia-div h4 {
   color: #8F00FF;
@@ -469,7 +457,7 @@ section {
 .garantia-div p {
   font-family: "Fredoka", sans-serif;
   font-size: 1.2rem;
-  margin: 0.6rem;
+  margin: 2rem;
   text-align: center; }
 
 .garantia-div span {
@@ -511,19 +499,20 @@ section {
   text-align: center;
   color: #8F00FF;
   font-family: "Lobster", cursive;
-  font-size: 2.5rem; }
+  font-size: 4rem; }
 
 .cuentas-subtitulo {
   color: #ffffff;
   font-size: 1.8rem;
   font-family: "Fredoka", sans-serif;
   text-align: center;
-  padding: 10px; }
+  padding: 10px;
+  margin: 2rem; }
 
 .cuentas-galeria {
-  margin-top: 1rem;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 2rem; }
 
 .titulo-galeria {
   font-size: 2.5rem;
@@ -635,7 +624,7 @@ section {
 
 .metodos-pago {
   border: 0.12rem solid #8F00FF;
-  margin: 1rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column; }
   .metodos-pago h3 {
@@ -662,15 +651,17 @@ section {
   font-family: "Lobster", cursive;
   font-size: 2.5rem;
   color: #8F00FF;
-  text-align: center; }
+  text-align: center;
+  margin: 2rem; }
 
 .contenedor-servicios {
   display: flex;
   flex-direction: column;
-  margin: 1rem; }
+  margin: 2rem;
+  align-items: center; }
   .contenedor-servicios p {
     font-family: "Fredoka", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center; }
   .contenedor-servicios span {
     font-family: "Fredoka", sans-serif;
@@ -732,58 +723,57 @@ section {
     text-decoration: none;
     color: #8F00FF; }
 
-/*posiblemente sea re diseñada desde cero*/
 h1 {
   text-align: center;
   color: #8F00FF;
   font-family: "Lobster", cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-top: 2rem;
   margin-bottom: 2rem; }
 
-.contenedor-formulario-focials {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-.formulario-contacto {
-  flex: 70%; }
-  .formulario-contacto legend {
-    text-align: center;
-    color: #ffffff;
-    font-family: "Lobster", cursive;
-    font-size: 2rem; }
-  .formulario-contacto label {
-    font-size: 1.2rem;
-    font-family: "Fredoka", sans-serif; }
-  .formulario-contacto input {
-    font-size: 1rem;
-    font-family: "Fredoka", sans-serif;
-    color: #8F00FF; }
-  .formulario-contacto option {
-    color: #8F00FF; }
-  .formulario-contacto select {
-    color: #8F00FF; }
-
-.socials {
-  flex: 30%; }
-
-.socials {
+.contenedor-formulario-socials {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center; }
-  .socials a {
-    text-align: center;
-    color: #8F00FF;
-    font-family: "Lobster", cursive;
-    font-size: 1.5rem;
-    text-decoration: none; }
 
-.twitter {
-  padding-top: 50px; }
+.formulario-contacto legend {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Lobster", cursive;
+  font-size: 2rem; }
+
+.formulario-contacto label {
+  font-size: 1.2rem;
+  font-family: "Fredoka", sans-serif; }
+
+.formulario-contacto input {
+  font-size: 1rem;
+  font-family: "Fredoka", sans-serif;
+  color: #8F00FF; }
+
+.formulario-contacto option {
+  color: #8F00FF; }
+
+.formulario-contacto select {
+  color: #8F00FF; }
+
+.socials {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between; }
+  .socials li {
+    list-style: none;
+    padding: 0.5rem; }
+    .socials li i {
+      color: #8F00FF; }
+    .socials li a {
+      text-decoration: none;
+      font-family: "Lobster", cursive;
+      font-size: 1.2rem;
+      color: #ffffff; }
 
 .faq-general {
-  margin-top: 2rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column; }
 
@@ -791,37 +781,38 @@ h1 {
   text-align: center;
   color: #8F00FF;
   font-family: "Fredoka", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem; }
 
 .parrafo-faq {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  padding-left: 1rem;
-  padding-right: 1rem; }
+  flex-wrap: wrap; }
   .parrafo-faq p {
     color: #ffffff;
     font-family: "Fredoka", sans-serif;
-    font-size: 1.25rem;
-    margin-bottom: 60px; }
+    font-size: 1.2rem;
+    margin-bottom: 2rem; }
+  .parrafo-faq h3, .parrafo-faq h4 {
+    color: #8F00FF;
+    font-family: "Lobster", cursive;
+    font-size: 1.8rem; }
 
-.titulo-parrafo-faq {
-  color: #8F00FF;
+.disclaimer-servicios {
+  margin: 2rem;
+  border: 0.12rem solid #8F00FF;
   font-family: "Fredoka", sans-serif;
-  font-size: 2.5rem; }
-
-.logos-disclaimer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 50px; }
-
-.logos-contacto {
-  flex: 50%; }
-
-.disclaimer-contacto {
-  flex: 50%; }
+  text-align: center; }
+  .disclaimer-servicios h4 {
+    color: #8F00FF;
+    font-size: 1.2rem; }
+  .disclaimer-servicios p {
+    font-size: 1.2rem;
+    margin: 5px; }
+  .disclaimer-servicios a {
+    text-decoration: none;
+    color: #8F00FF;
+    font-size: 1.2rem; }
 
 /*media queries. 600px por ahora sin cambios*/
 @media only screen and (min-width: 1024px) {
@@ -835,17 +826,21 @@ h1 {
   .formulario-contacto input {
     font-size: 20px;
     margin-left: 20px; }
-  .socials a {
+  .socials li {
     font-size: 30px; }
-  .faq-general {
-    background-color: #ededf2;
-    margin-top: 60px; }
   .titulo-faq {
-    color: #000000;
-    font-size: 60px;
-    margin-bottom: 50px; }
-  .titulo-parrafo-faq {
-    color: #000000;
-    font-size: 40px; }
+    font-size: 4rem; }
+  .faq-general {
+    margin: 3rem; }
+  .parrafo-faq h3, .parrafo-faq h4 {
+    font-size: 2.2rem; }
   .parrafo-faq p {
-    color: #000000; } }
+    font-size: 1.5rem; }
+  .disclaimer-servicios {
+    margin: 3rem; }
+    .disclaimer-servicios h4 {
+      font-size: 2rem; }
+    .disclaimer-servicios p {
+      font-size: 1.5rem; }
+    .disclaimer-servicios a {
+      font-size: 1.5rem; } }

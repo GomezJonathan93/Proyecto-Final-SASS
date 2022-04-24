@@ -1,5 +1,24 @@
 @import "utilities/variables";
 
+//map (se usa con la propiedad a colocar variables, map-get, nombre del map)
+$links: (
+    text-decoration-links: none,
+    font-family-links: $letra-titulos,
+    font-size-links: 0.8rem,
+    color-links: $color-titulos,
+);
+
+//extend (se usa con @extend %nombre)
+%borde{
+    border: 0.12rem solid #8F00FF;;
+}
+
+//mixin (se usa con @include nombre)
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+}
+
 *{
     color: #ffff;
 }
@@ -45,7 +64,7 @@ body{
     font-size: 2.5rem;
 }
 .contenedor-h2{
-    border: 0.12rem solid #8F00FF;
+    @extend %borde;
     padding: 0.5rem;
     margin: 2rem;
     h2{
@@ -194,7 +213,7 @@ section{
     li{
         list-style: none;
         a{
-            text-decoration: none;
+            text-decoration: map-get($map: $links, $key:text-decoration-links);
             font-family: $letra-titulos;
             font-size: 0.8rem;
             color: $color-titulos;
@@ -373,8 +392,7 @@ section{
 }
 // /*parte de coaches*/
 .contenedor-coach{
-    display: flex;
-    flex-direction: column;
+    @include flex;
     margin: 2rem;
     border: $border-forma;
     span{

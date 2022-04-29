@@ -7,6 +7,8 @@
 body {
   background-color: black; }
 
+/*index.html mobile first 480x547 */
+/*header*/
 .flex-div {
   display: flex;
   align-content: center;
@@ -32,6 +34,7 @@ body {
       .contenedor-nav li a:hover {
         color: #8F00FF; }
 
+/*titulo y subtitulos*/
 .index-h1 {
   text-align: center;
   color: #8F00FF;
@@ -48,6 +51,7 @@ body {
   .contenedor-h2 .segundo-h2 {
     color: #8F00FF; }
 
+/*estadisticas*/
 section {
   display: grid;
   grid-template-areas: "clientes coaches" "boosters venta"; }
@@ -84,6 +88,7 @@ section {
   height: 6.25rem;
   width: 6.25rem; }
 
+/*ventajas*/
 .ventajas-section {
   display: inline-block;
   background-color: #000;
@@ -113,6 +118,7 @@ section {
   font-size: 1.2rem;
   text-decoration: none; }
 
+/*carrusel*/
 .titulo-carrusel {
   text-align: center;
   font-size: 1.9rem;
@@ -135,6 +141,7 @@ section {
   color: #8F00FF;
   font-size: 1rem; }
 
+/*lore de yuumi*/
 .titulo-lore {
   text-align: center;
   font-size: 2rem;
@@ -194,6 +201,7 @@ section {
   font-family: "Lobster", cursive;
   text-align: center; }
 
+/*media query*/
 @media only screen and (min-width: 600px) {
   .imgEstadisticas {
     height: 12rem;

@@ -25,23 +25,25 @@ $links: (
 body{
     background-color: black;
 }
-/*index.html mobile first 480x547 */
+/*index.html mobile first 400x547 */
 /*header*/
 .flex-div{
     display: flex;
     align-content: center;
     justify-content: space-between;
     img{
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
         margin-left: 1rem;
+        margin-top: 0.5rem;
     }
 }
 .contenedor-nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
     li{
         list-style: none;
         a{
@@ -49,7 +51,7 @@ body{
             color: #ffffff;
             font-family: $letra-titulos;
             font-size: 1rem;
-            margin: 0.3rem;
+            margin: 0.2rem;
             &:hover{
                 color: $color-titulos;
             }  
@@ -87,28 +89,40 @@ section{
     font-size: 1rem;
     font-family: $letra-secundaria;
     text-align: center;
+    .numeros{
+        font-size: 1.2rem;
+    }
 }
 .coaches{
     grid-area: coaches;
     font-size: 1rem;
     font-family: $letra-secundaria;
     text-align: center;
+    .numeros{
+        font-size: 1.2rem;
+    }
 }
 .boosters{
     grid-area: boosters;
     font-size: 1rem;
     font-family: $letra-secundaria;
     text-align: center;
+    .numeros{
+        font-size: 1.2rem;
+    }
 }
 .venta{
     grid-area: venta;
     font-size: 1rem;
     font-family: $letra-secundaria;
     text-align: center;
+    .numeros{
+        font-size: 1.2rem;
+    }
 }
-.parrafo2{
+.parrafo-2{
     color: $color-titulos;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .img-estadisticas{
     height: 6.25rem;
@@ -207,7 +221,8 @@ section{
     }
 }
 .redes-sociales{
-    margin: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     display: flex;
     justify-content: space-evenly;
     li{
@@ -235,33 +250,71 @@ section{
 }
 /*media query*/
 @media only screen and (min-width:600px){
-    .imgEstadisticas{
-        height: 12rem;
-        width: 12rem;
+    .flex-div{
+        img{
+            height: 6rem;
+            width: 6rem;
+        }
+        .contenedor-nav{
+            a{
+                font-size: 1.3rem;
+            }
+        }
     }
-    .referenciasTrabajo{
-        h3{
-            font-size: 2.1rem;
+    .index-h1{
+        font-size: 3rem;
+    }
+    .contenedor-h2{
+        h2{
+            font-size: 1.3rem;
+        }
+    }
+    .clientes, .coaches, .boosters, .venta{
+        p{
+            font-size: 1.6rem;
+        }
+        .parrafo-2{
+            font-size: 3rem;
+        }
+    }
+    .img-estadisticas{
+        height: 10rem;
+        width: 10rem;
+    }
+    .titulo-carrusel{
+        font-size: 2.8rem;
+    }
+    .div-lore{
+        .titulo-lore{
+            font-size: 2.8rem;
+        }
+        .span-lore{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1.3rem;
         }
     }
 }
 @media only screen and (min-width:1024px){
-    header{
+    .flex-div{
         img{
             height: 10rem;
             width: 10rem;
         }
-    }
-    .contenedor-nav{
-        a{
-            font-size: 1.5rem;
-            margin: 1rem;
+        .contenedor-nav{
+            a{
+                font-size: 1.5rem;
+                margin: 1rem;
+            }
         }
     }
     .index-h1{
         font-size: 5rem;
     }
     .contenedor-h2{
+        margin-left: 2rem;
+        margin-right: 2rem;
         h2{
             font-size: 1.5rem;
         }
@@ -292,6 +345,8 @@ section{
     }
     .ventajas-section{
         margin: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     .ventajas-titulo{
         font-size: 3.5rem;
@@ -311,6 +366,12 @@ section{
     }
     .texto-carousel{
         margin: 10rem;
+        i{
+            font-size: 2rem;
+        }
+        a{
+            font-size: 2.5rem;
+        }
     }
     /*query lore*/
     .titulo-lore{
@@ -318,7 +379,8 @@ section{
     }
     .div-lore{
         font-size: 1.5rem;
-        padding: 10px 10px;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     .span-lore{
         font-size: 1.8rem;
@@ -387,7 +449,7 @@ section{
     padding: 1rem;
     color: #ffffff;
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: $letra-secundaria
 }
 // /*parte de coaches*/
@@ -409,9 +471,13 @@ section{
     text-align: center;
     a{
         font-family: $letra-secundaria;
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-decoration: none;
-        color: $color-titulos;
+        color: #ffffff;
+        border: $border-forma;
+        border-radius: 10px;
+        background-color: #8F00FF;
+        box-shadow:3px 6px #5a0a97;
     }
 }
 .coach-span{
@@ -471,6 +537,29 @@ section{
     }
 }
 // /*media queries*/
+@media only screen and (min-width:600px){
+    .h1-coaching{
+        h1{
+            font-size: 3.5rem;
+        }
+    }
+    .h2-coaching{
+        h2{
+            font-size: 1.8rem;
+        }
+    }
+    .div-h3{
+        margin-top: 100px;
+    }
+    .contenedor-coach{
+        .coach-span{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+}
 @media only screen and (min-width:1024px){
     header{
         img{
@@ -498,6 +587,8 @@ section{
     }
     .coaching-p{
         font-size: 1.8rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     .contenedor-coach{
         align-items: center;
@@ -562,7 +653,7 @@ section{
     border: $border-forma;
     margin: 2rem;
     text-align: center;
-    a{
+    .booster-a{
         font-family: $letra-secundaria;
         font-size: 2rem;
         text-decoration: none;
@@ -572,9 +663,9 @@ section{
 }
 .booster-p{
     font-family: $letra-secundaria;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     margin: 2rem;
 }
 .garantia-div{
@@ -599,7 +690,33 @@ section{
         color: $color-titulos;
     }
 }
-//mediaquery de 600px intacta*/
+//mediaquery*/
+@media only screen and (min-width:600px){
+    .titulo-boosting{
+        font-size: 3.2rem;
+    }
+    .subtitulo-boosting{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .disclaimer-boosting{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .contenedor-booster{
+        .booster-a{
+            font-size: 3rem;
+        }
+        .booster-p{
+            font-size: 1.5rem;
+        }
+    }
+    .garantia-div{
+        h4{
+            font-size: 3rem;
+        }
+    }
+}
 @media only screen and (min-width:1024px){
     .titulo-boosting{
         font-size: 4rem;
@@ -626,6 +743,8 @@ section{
         margin-right: 10rem;
     }
     .garantia-div{
+        margin-left: 2rem;
+        margin-right: 2rem;
         h4{
             font-size: 3rem;
         }
@@ -644,11 +763,11 @@ section{
     text-align: center;
     color: $color-titulos;
     font-family: $letra-titulos;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .cuentas-subtitulo{
     color: #ffffff;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: $letra-secundaria;
     text-align: center;
     padding: 10px;
@@ -679,54 +798,55 @@ section{
 }
 .img1{
     grid-area:img1 ;
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 150px;
 }
 .img2{
     grid-area:img2 ;
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 150px;
 }
 .img3{
     grid-area:img3 ;
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 150px;
 }
 .img4{
     grid-area:img4 ;
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 150px;
 }
 .img5{
     grid-area:img5 ;
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 150px;
 }
 .img6{
     grid-area:img6 ;
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 150px;
 }
 .img7{
     grid-area:img7 ;
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 150px;
 }
 .img8{
     grid-area:img8 ;
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 150px;
 }
 .img9{
     grid-area:img9 ;
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 150px;
 }
 .parrafo-gal-grid{
     grid-area: parrafo-gal-grid;
     font-size: 1.2rem;
     font-family: $letra-secundaria;
     text-align: center;
+    padding-top: 1rem;
 
 }
 .contac-gal-grid{
@@ -759,8 +879,8 @@ section{
 }
 .imagenes-galeria-un{
     img{
-        height: 300px;
-        width: 200px;
+        height: 250px;
+        width: 150px;
         padding-top: 0.5rem;
     }
 }
@@ -777,7 +897,7 @@ section{
         text-decoration: none;
         color: $color-titulos;
         font-family: $letra-secundaria;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         text-align: center;
     }
 }
@@ -798,9 +918,11 @@ section{
     color: $color-titulos;
     font-family: $letra-secundaria;
     font-size: 2rem;
+    padding-left: 0.5rem;
 }
 .parrafo-pago{
     font-size: 1.2rem;
+    padding: 0.5rem;
     font-family: $letra-secundaria;
     color: #ffffff;
     a{
@@ -818,23 +940,39 @@ section{
 .contenedor-servicios{
     display: flex;
     flex-direction: column;
-    margin: 2rem;
     align-items: center;
-    p{
-        font-family: $letra-secundaria;
-        font-size: 1rem;
-        text-align: center;
-    }
-    span{
-        font-family: $letra-secundaria;
-        color: $color-titulos;
-    }
-    a{
-        text-decoration: none;
-        color: $color-titulos;
+    .servicio-coaching, .servicio-boosting{
+        p{
+            font-family: $letra-secundaria;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 1.5rem;
+        }
+        span{
+            font-family: $letra-secundaria;
+            color: $color-titulos;
+        }
+        a{
+            text-decoration: none;
+            color: $color-titulos;
+        }
     }
 }
-//media query /*media query*/
+/*media query*/
+@media only screen and (min-width:600px){
+    .imagenes-galeria{
+        img{
+            height: 350px;
+            width: 200px;
+        }
+    }
+    .imagenes-galeria-un{
+        img{
+            height: 350px;
+            width: 250px;
+        }
+    }
+}
 @media only screen and (min-width:1024px){
     .cuentas-titulo{
         font-size: 4rem;
@@ -882,12 +1020,15 @@ section{
     }
     .metodos-pago{
         border: $border-forma;
-        margin: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
         h3{
             font-size: 3rem;
         }
     }
     .parrafo-pago{
+        margin-left: 2rem;
+        margin-right: 2rem;
         font-size: 1.8rem;
         color: #ffffff;
     }
@@ -898,21 +1039,25 @@ section{
 .contenedor-servicios{
     display: flex;
     flex-direction: row;
-    p{
-        font-family: $letra-secundaria;
-        font-size: 1.8rem;
-        text-align: center;
-    }
-    span{
-        font-family: $letra-secundaria;
-        color: $color-titulos;
-    }
-    a{
-        text-decoration: none;
-        color: $color-titulos;
+    .servicio-coaching, .servicio-boosting{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        p{
+            font-family: $letra-secundaria;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        span{
+            font-family: $letra-secundaria;
+            color: $color-titulos;
+        }
+        a{
+            text-decoration: none;
+            color: $color-titulos;
+        }
     }
 }
-//contacto.html /*contacto.html*/
+/*contacto.html*/
 h1{
     text-align: center;
     color: $color-titulos;
@@ -925,6 +1070,8 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 .formulario-contacto{
     legend{
@@ -1014,7 +1161,12 @@ h1{
         font-size: 1.2rem;
     }
 }
-/*media queries. 600px por ahora sin cambios*/
+/*media queries*/
+@media only screen and (min-width:600px){
+    h1{
+        font-size: 3rem;
+    }
+}
 @media only screen and (min-width:1024px){
     h1{
         font-size: 4rem;

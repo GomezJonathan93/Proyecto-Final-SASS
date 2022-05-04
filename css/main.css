@@ -7,22 +7,24 @@
 body {
   background-color: black; }
 
-/*index.html mobile first 480x547 */
+/*index.html mobile first 400x547 */
 /*header*/
 .flex-div {
   display: flex;
   align-content: center;
   justify-content: space-between; }
   .flex-div img {
-    height: 80px;
-    width: 80px;
-    margin-left: 1rem; }
+    height: 60px;
+    width: 60px;
+    margin-left: 1rem;
+    margin-top: 0.5rem; }
 
 .contenedor-nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: 1rem; }
+  margin-top: 0.5rem;
+  margin-right: 0.5rem; }
   .contenedor-nav li {
     list-style: none; }
     .contenedor-nav li a {
@@ -30,7 +32,7 @@ body {
       color: #ffffff;
       font-family: "Lobster", cursive;
       font-size: 1rem;
-      margin: 0.3rem; }
+      margin: 0.2rem; }
       .contenedor-nav li a:hover {
         color: #8F00FF; }
 
@@ -61,28 +63,36 @@ section {
   font-size: 1rem;
   font-family: "Fredoka", sans-serif;
   text-align: center; }
+  .clientes .numeros {
+    font-size: 1.2rem; }
 
 .coaches {
   grid-area: coaches;
   font-size: 1rem;
   font-family: "Fredoka", sans-serif;
   text-align: center; }
+  .coaches .numeros {
+    font-size: 1.2rem; }
 
 .boosters {
   grid-area: boosters;
   font-size: 1rem;
   font-family: "Fredoka", sans-serif;
   text-align: center; }
+  .boosters .numeros {
+    font-size: 1.2rem; }
 
 .venta {
   grid-area: venta;
   font-size: 1rem;
   font-family: "Fredoka", sans-serif;
   text-align: center; }
+  .venta .numeros {
+    font-size: 1.2rem; }
 
-.parrafo2 {
+.parrafo-2 {
   color: #8F00FF;
-  font-size: 3rem; }
+  font-size: 2rem; }
 
 .img-estadisticas {
   height: 6.25rem;
@@ -178,7 +188,8 @@ section {
     color: #8F00FF; }
 
 .redes-sociales {
-  margin: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   display: flex;
   justify-content: space-evenly; }
   .redes-sociales li {
@@ -203,23 +214,45 @@ section {
 
 /*media query*/
 @media only screen and (min-width: 600px) {
-  .imgEstadisticas {
-    height: 12rem;
-    width: 12rem; }
-  .referenciasTrabajo h3 {
-    font-size: 2.1rem; } }
-
-@media only screen and (min-width: 1024px) {
-  header img {
+  .flex-div img {
+    height: 6rem;
+    width: 6rem; }
+  .flex-div .contenedor-nav a {
+    font-size: 1.3rem; }
+  .index-h1 {
+    font-size: 3rem; }
+  .contenedor-h2 h2 {
+    font-size: 1.3rem; }
+  .clientes p, .coaches p, .boosters p, .venta p {
+    font-size: 1.6rem; }
+  .clientes .parrafo-2, .coaches .parrafo-2, .boosters .parrafo-2, .venta .parrafo-2 {
+    font-size: 3rem; }
+  .img-estadisticas {
     height: 10rem;
     width: 10rem; }
-  .contenedor-nav a {
+  .titulo-carrusel {
+    font-size: 2.8rem; }
+  .div-lore .titulo-lore {
+    font-size: 2.8rem; }
+  .div-lore .span-lore {
+    font-size: 1.5rem; }
+  .div-lore p {
+    font-size: 1.3rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .flex-div img {
+    height: 10rem;
+    width: 10rem; }
+  .flex-div .contenedor-nav a {
     font-size: 1.5rem;
     margin: 1rem; }
   .index-h1 {
     font-size: 5rem; }
-  .contenedor-h2 h2 {
-    font-size: 1.5rem; }
+  .contenedor-h2 {
+    margin-left: 2rem;
+    margin-right: 2rem; }
+    .contenedor-h2 h2 {
+      font-size: 1.5rem; }
   .estadisticas {
     display: flex;
     justify-content: space-evenly;
@@ -238,7 +271,9 @@ section {
     height: 15rem;
     width: 15rem; }
   .ventajas-section {
-    margin: 1rem; }
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
   .ventajas-titulo {
     font-size: 3.5rem; }
   .ventajas-p {
@@ -252,12 +287,17 @@ section {
     font-size: 3.5rem; }
   .texto-carousel {
     margin: 10rem; }
+    .texto-carousel i {
+      font-size: 2rem; }
+    .texto-carousel a {
+      font-size: 2.5rem; }
   /*query lore*/
   .titulo-lore {
     font-size: 3.5rem; }
   .div-lore {
     font-size: 1.5rem;
-    padding: 10px 10px; }
+    margin-left: 2rem;
+    margin-right: 2rem; }
   .span-lore {
     font-size: 1.8rem; }
   .video {
@@ -307,7 +347,7 @@ section {
   padding: 1rem;
   color: #ffffff;
   text-align: justify;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Fredoka", sans-serif; }
 
 .contenedor-coach {
@@ -327,9 +367,13 @@ section {
   text-align: center; }
   .boton-contrato a {
     font-family: "Fredoka", sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-decoration: none;
-    color: #8F00FF; }
+    color: #ffffff;
+    border: 0.12rem solid #8F00FF;
+    border-radius: 10px;
+    background-color: #8F00FF;
+    box-shadow: 3px 6px #5a0a97; }
 
 .coach-span {
   color: #8F00FF;
@@ -380,6 +424,18 @@ section {
     color: #8F00FF;
     font-size: 1.5rem; }
 
+@media only screen and (min-width: 600px) {
+  .h1-coaching h1 {
+    font-size: 3.5rem; }
+  .h2-coaching h2 {
+    font-size: 1.8rem; }
+  .div-h3 {
+    margin-top: 100px; }
+  .contenedor-coach .coach-span {
+    font-size: 3rem; }
+  .contenedor-coach p {
+    font-size: 1.5rem; } }
+
 @media only screen and (min-width: 1024px) {
   header img {
     height: 10rem;
@@ -393,7 +449,9 @@ section {
   .div-h3 h4 {
     font-size: 2.2rem; }
   .coaching-p {
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
   .contenedor-coach {
     align-items: center;
     margin-left: 10rem;
@@ -444,7 +502,7 @@ section {
   border: 0.12rem solid #8F00FF;
   margin: 2rem;
   text-align: center; }
-  .contenedor-booster a {
+  .contenedor-booster .booster-a {
     font-family: "Fredoka", sans-serif;
     font-size: 2rem;
     text-decoration: none;
@@ -453,9 +511,9 @@ section {
 
 .booster-p {
   font-family: "Fredoka", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   margin: 2rem; }
 
 .garantia-div h4 {
@@ -478,6 +536,22 @@ section {
   text-decoration: none;
   color: #8F00FF; }
 
+@media only screen and (min-width: 600px) {
+  .titulo-boosting {
+    font-size: 3.2rem; }
+  .subtitulo-boosting {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .disclaimer-boosting {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .contenedor-booster .booster-a {
+    font-size: 3rem; }
+  .contenedor-booster .booster-p {
+    font-size: 1.5rem; }
+  .garantia-div h4 {
+    font-size: 3rem; } }
+
 @media only screen and (min-width: 1024px) {
   .titulo-boosting {
     font-size: 4rem; }
@@ -496,24 +570,27 @@ section {
     align-items: center;
     margin-left: 10rem;
     margin-right: 10rem; }
-  .garantia-div h4 {
-    font-size: 3rem; }
-  .garantia-div p {
-    font-size: 1.5rem;
-    margin-left: 4rem;
-    margin-right: 4rem; }
-  .garantia-div span {
-    font-size: 1.8rem; } }
+  .garantia-div {
+    margin-left: 2rem;
+    margin-right: 2rem; }
+    .garantia-div h4 {
+      font-size: 3rem; }
+    .garantia-div p {
+      font-size: 1.5rem;
+      margin-left: 4rem;
+      margin-right: 4rem; }
+    .garantia-div span {
+      font-size: 1.8rem; } }
 
 .cuentas-titulo {
   text-align: center;
   color: #8F00FF;
   font-family: "Lobster", cursive;
-  font-size: 4rem; }
+  font-size: 3rem; }
 
 .cuentas-subtitulo {
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-family: "Fredoka", sans-serif;
   text-align: center;
   padding: 10px;
@@ -538,54 +615,55 @@ section {
 
 .img1 {
   grid-area: img1;
-  height: 300px;
-  width: 200px; }
+  height: 250px;
+  width: 150px; }
 
 .img2 {
   grid-area: img2;
-  height: 300px;
-  width: 200px; }
+  height: 250px;
+  width: 150px; }
 
 .img3 {
   grid-area: img3;
-  height: 300px;
-  width: 200px; }
+  height: 250px;
+  width: 150px; }
 
 .img4 {
   grid-area: img4;
-  height: 300px;
-  width: 200px; }
+  height: 250px;
+  width: 150px; }
 
 .img5 {
   grid-area: img5;
-  height: 300px;
-  width: 200px; }
+  height: 250px;
+  width: 150px; }
 
 .img6 {
   grid-area: img6;
-  height: 300px;
-  width: 200px; }
+  height: 250px;
+  width: 150px; }
 
 .img7 {
   grid-area: img7;
-  height: 300px;
-  width: 200px; }
+  height: 250px;
+  width: 150px; }
 
 .img8 {
   grid-area: img8;
-  height: 300px;
-  width: 200px; }
+  height: 250px;
+  width: 150px; }
 
 .img9 {
   grid-area: img9;
-  height: 300px;
-  width: 200px; }
+  height: 250px;
+  width: 150px; }
 
 .parrafo-gal-grid {
   grid-area: parrafo-gal-grid;
   font-size: 1.2rem;
   font-family: "Fredoka", sans-serif;
-  text-align: center; }
+  text-align: center;
+  padding-top: 1rem; }
 
 .contac-gal-grid {
   grid-area: contac-gal-grid;
@@ -613,8 +691,8 @@ section {
   grid-area: img-un3; }
 
 .imagenes-galeria-un img {
-  height: 300px;
-  width: 200px;
+  height: 250px;
+  width: 150px;
   padding-top: 0.5rem; }
 
 .parrafo-galeria {
@@ -629,7 +707,7 @@ section {
     text-decoration: none;
     color: #8F00FF;
     font-family: "Fredoka", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center; }
 
 .metodos-pago {
@@ -647,10 +725,12 @@ section {
   text-align: left;
   color: #8F00FF;
   font-family: "Fredoka", sans-serif;
-  font-size: 2rem; }
+  font-size: 2rem;
+  padding-left: 0.5rem; }
 
 .parrafo-pago {
   font-size: 1.2rem;
+  padding: 0.5rem;
   font-family: "Fredoka", sans-serif;
   color: #ffffff; }
   .parrafo-pago a {
@@ -667,18 +747,27 @@ section {
 .contenedor-servicios {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
   align-items: center; }
-  .contenedor-servicios p {
+  .contenedor-servicios .servicio-coaching p, .contenedor-servicios .servicio-boosting p {
     font-family: "Fredoka", sans-serif;
-    font-size: 1rem;
-    text-align: center; }
-  .contenedor-servicios span {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1.5rem; }
+  .contenedor-servicios .servicio-coaching span, .contenedor-servicios .servicio-boosting span {
     font-family: "Fredoka", sans-serif;
     color: #8F00FF; }
-  .contenedor-servicios a {
+  .contenedor-servicios .servicio-coaching a, .contenedor-servicios .servicio-boosting a {
     text-decoration: none;
     color: #8F00FF; }
+
+/*media query*/
+@media only screen and (min-width: 600px) {
+  .imagenes-galeria img {
+    height: 350px;
+    width: 200px; }
+  .imagenes-galeria-un img {
+    height: 350px;
+    width: 250px; } }
 
 @media only screen and (min-width: 1024px) {
   .cuentas-titulo {
@@ -709,10 +798,13 @@ section {
     font-size: 2rem; }
   .metodos-pago {
     border: 0.12rem solid #8F00FF;
-    margin: 1rem; }
+    margin-left: 2rem;
+    margin-right: 2rem; }
     .metodos-pago h3 {
       font-size: 3rem; }
   .parrafo-pago {
+    margin-left: 2rem;
+    margin-right: 2rem;
     font-size: 1.8rem;
     color: #ffffff; } }
 
@@ -722,17 +814,21 @@ section {
 .contenedor-servicios {
   display: flex;
   flex-direction: row; }
-  .contenedor-servicios p {
-    font-family: "Fredoka", sans-serif;
-    font-size: 1.8rem;
-    text-align: center; }
-  .contenedor-servicios span {
-    font-family: "Fredoka", sans-serif;
-    color: #8F00FF; }
-  .contenedor-servicios a {
-    text-decoration: none;
-    color: #8F00FF; }
+  .contenedor-servicios .servicio-coaching, .contenedor-servicios .servicio-boosting {
+    margin-left: 2rem;
+    margin-right: 2rem; }
+    .contenedor-servicios .servicio-coaching p, .contenedor-servicios .servicio-boosting p {
+      font-family: "Fredoka", sans-serif;
+      font-size: 1.8rem;
+      text-align: center; }
+    .contenedor-servicios .servicio-coaching span, .contenedor-servicios .servicio-boosting span {
+      font-family: "Fredoka", sans-serif;
+      color: #8F00FF; }
+    .contenedor-servicios .servicio-coaching a, .contenedor-servicios .servicio-boosting a {
+      text-decoration: none;
+      color: #8F00FF; }
 
+/*contacto.html*/
 h1 {
   text-align: center;
   color: #8F00FF;
@@ -744,7 +840,9 @@ h1 {
 .contenedor-formulario-socials {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem; }
 
 .formulario-contacto legend {
   text-align: center;
@@ -824,7 +922,11 @@ h1 {
     color: #8F00FF;
     font-size: 1.2rem; }
 
-/*media queries. 600px por ahora sin cambios*/
+/*media queries*/
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 3rem; } }
+
 @media only screen and (min-width: 1024px) {
   h1 {
     font-size: 4rem;
